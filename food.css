@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+
 
 .main-container {
   position: relative;
@@ -36,6 +34,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  background-color: #000000cc;
   z-index: 1030;
 }
 .top-nav {
@@ -68,10 +67,13 @@ header {
   border-radius: 1em;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.5s ease;
 }
-
+.book-btn:hover{
+  background-color: #dba503;
+}
 nav {
-  padding: 0.2rem 5rem;
+  padding: 0.2rem 7.5rem;
 }
 
 nav ul {
@@ -114,7 +116,6 @@ nav ul li a:hover {
   padding: 1rem;
   text-align: justify;
   line-height: 1.5rem;
-  font-weight: 600;
   color: white;
 }
 .btn{
@@ -125,6 +126,11 @@ nav ul li a:hover {
   margin-right: 1rem;
   color: white;
   font-size: 1rem;
+  transition: background-color 0.4s ease ;
+}
+.btn:hover{
+  background-color: #ffb03b;
+  border: 1px solid transparent;
 }
 .about-container {
   display: flex;
@@ -230,18 +236,36 @@ nav ul li a:hover {
 .card{
   margin-top: 2.3rem;
   padding: 50px 30px;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
+
+.card:hover {
+  background-color: orange; 
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .card-item span,
+.card:hover .card-item h4 a,
+.card:hover .card-item p {
+  color: white;
+}
+
+
 .card-item h4 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
 }
+
 .card-item h4 a{
   text-decoration: none;
   font-family: "Satisfy", sans-serif;
   color: #433f39;
+}
+.card-item h4 a:hover{
+  color: #fff;
 }
 
 .card-item span {
@@ -254,6 +278,7 @@ nav ul li a:hover {
   color: #9e8d96;
   font-size: 1rem;
 }
+
 .menu{
   display: flex;
   justify-content: center;
@@ -322,6 +347,7 @@ nav ul li a:hover {
 }
 
 .specials{
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -457,7 +483,7 @@ ul li i {
 .book-container img{
   width: 360px;
 }
-form {
+.form {
   padding: 5.5rem 2rem;
   background: #f9f9f9;
   max-width: 900px;
@@ -485,13 +511,17 @@ textarea::placeholder {
 
 
 
-textarea {
+.textarea {
   width: 100%;
   height: 100px;
   margin-bottom: 1rem;
 }
 .button-container {
   text-align: center; 
+}
+
+.form-get-in-touch{
+  padding: 0 2rem;
 }
 
 button {
@@ -571,6 +601,7 @@ button {
   padding-bottom: 0.8rem;
 }
 .testimonial {
+  margin-top: 4rem;
   position: relative;
   text-align: center;
   color: white;
@@ -656,21 +687,20 @@ button {
 
 .get-in-touch {
   display: flex;
-  gap: 40px;
   padding: 1rem 7.5rem;
-  flex-wrap: wrap;
 }
 
-.card {
+ .card-touch {
+  padding: 1.5rem;
   background-color: #ffffff;
   width: 30%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-.card h3{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+ }
+.card-touch  h3{
   font-family: "Satisfy", sans-serif;
   padding-bottom: 0.5rem;
 }
-.card p{
+.card-touch  p{
   color: #433f39;
   padding-bottom: 0.5rem;
 }
@@ -711,39 +741,32 @@ button {
   font-size: 0.95rem;
 }
 
-.form-get-in-touch {
-  padding: 5.5rem 2rem;
-  max-width: 900px;
-  background: white;
-  margin: 0 auto;
-  flex: 1;
-}
 
 .form-get-in-touch input,
 .form-get-in-touch textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .form-get-in-touch input {
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
-
 .form-get-in-touch textarea {
   margin-bottom: 1rem;
 }
 
+.right-in-touch{
+  width: 70%;
+}
 .form-get-in-touch .row {
   display: flex;
   gap: 20px;
 }
 
-.form-get-in-touch .row input {
-  flex: 1;
-}
+
 .footer{
+  margin-top: 3rem;
   padding: 3rem 0;
   background: #1e160d;
  display: flex;
