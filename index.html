@@ -32,21 +32,21 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Specials</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#class">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#event">Events</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#">Dropdown</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
   </section>
   <main>
-    <section class="home-container">
+    <section class="home-container" id="home">
       <h2><span>Delicious</span> Restaurant</h2>
       <p class="home-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -54,7 +54,7 @@
       <button class="btn">Our Menu</button>
       <button class="btn">Book a table</button>
     </section>
-    <section class="about-container">
+    <section class="about-container" id="class">
       <div class="left">
         <div class="image-wrapper">
           <img src="./img/about.jpg" class="img-fluid" alt="About Image">
@@ -125,7 +125,7 @@
       </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <h2 class="res-content">Menu</h2>
       <div><span class="description-title1">Check Our Tasty</span> <span class="description-title2">Menu</span></div>
 
@@ -269,7 +269,7 @@
       </div>
     </section>
 
-    <div class="specials">
+    <div class="specials" id="specials">
       <h2 class="res-content">Specials</h2>
       <div><span class="description-title1">Check Our</span> <span class="description-title2">Specials</span></div>
 
@@ -298,7 +298,7 @@
       </div>
     </div>
 
-    <div class="event">
+    <div class="event" id="event">
       <div class="bg-overlay">
         <img src="./img/events-bg.jpg" class="res-img" alt="">
         <div class="overlay"></div>
@@ -341,9 +341,10 @@
       </div>
 
       <div class="book-container">
+
         <img src="./img/reservation.jpg" alt="">
 
-        <form action="#">
+        <form action="#" class="form">
           <div class="form-row">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
@@ -356,7 +357,7 @@
             <input type="number" placeholder="Number of People" required>
           </div>
 
-          <textarea placeholder="Message"></textarea>
+          <textarea placeholder="Message" class="textarea"></textarea>
           <div class="button-container">
             <button type="submit">Book a Table</button>
           </div>
@@ -365,7 +366,7 @@
       </div>
     </div>
 
-    <section class="gallery-container">
+    <section class="gallery-container" id="gallery">
       <h2 class="res-content">Gallery</h2>
       <div>
         <span class="description-title1">Some photos from</span>
@@ -384,7 +385,7 @@
 
     </section>
 
-    <section class="chef-container">
+    <section class="chef-container" id="chefs">
       <h2 class="res-content">Chefs</h2>
       <div>
         <span class="description-title1">Our Professional</span>
@@ -488,10 +489,11 @@
     </div>
 
     <section class="contact">
-      <h2 class="res-content">Chefs</h2>
+      <h2 class="res-content">Contact
+        </h2>
       <div>
-        <span class="description-title1">Our Professional</span>
-        <span class="description-title2">Chefs</span>
+        <span class="description-title1">Check Our </span>
+        <span class="description-title2">Contact</span>
       </div>
 
       <div class="contact-container">
@@ -502,8 +504,8 @@
       </div>
     </section>
 
-    <section class="get-in-touch">
-      <div class="left-in-touch card">
+    <section class="get-in-touch" id="contact"> 
+      <div class="left-in-touch card-touch ">
         <h3>Get in touch</h3>
         <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
 
@@ -548,9 +550,14 @@
             <input type="email" name="email" placeholder="Your Email" required />
           </div>
           <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+          <textarea name="message" placeholder="Message" rows="10" required></textarea>
 
-          <button type="submit" style="margin: auto;">Send Message</button>
+       
+
+          <div class="button-container">
+
+            <button type="submit">Send Message</button>
+            </div>
         </form>
       </div>
     </section>
@@ -592,7 +599,7 @@
         </div>
         <div class="footer-item">
           <div class="left-info">
-           
+
           </div>
           <div class="footer-info">
 
@@ -607,9 +614,9 @@
             </div>
           </div>
         </div>
-       
+
       </div>
-      <div class="center-line" ></div>
+      <div class="center-line"></div>
 
       <div class="bottom-footer">
         <p>© Copyright Delicious All Rights Reserved</p>
